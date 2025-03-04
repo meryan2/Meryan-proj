@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Hotel & Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5dc;
+            color: #383838;
+        }
+        header {
+            background-color: #ffffff;
+            color: rgb(12, 12, 11);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo {
+            font-size: 35px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 95px;
+            height: 95px;
+            margin-right: 10px;
+        }
+        .user-select {
+            background: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 350px;
+            height: 250px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .info-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .info-box {
+            background-color: #ffffff;
+            border: 2px solid #b1c3fc;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .info-box:hover {
+            transform: scale(1.05);
+        }
+        .info-box:nth-child(4) {
+            background-color: #ffffff; 
+            border-color: #c8d4fd; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+        }
+        .info-box:nth-child(5) {
+            background-color: #ffffff; 
+            border-color: #b9d6f8; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+        }
+        .info-box:nth-child(6) {
+            background-color: #ffffff; 
+            border-color: #accff7; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+        }
+        .info-box:nth-child(7) {
+            background-color: #f2f4f5; 
+            border-color: #ffffff; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+        }
+        .video-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            overflow: hidden;
+        }
+        .video-container video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\user\Downloads\golf logo 11.jpeg" alt>
+            <span>WHOLE IN ONE</span>
+        </div>
+        <select class="user-select">
+            <option>الإقامة في فنادق</option>
+            <option>المطاعم والمقاهي</option>
+            <option>متجر</option>
+            <option>دروس الجولف</option>
+            <option>التدريب الرقمي</option>
+        </select>
+    </header>
+    
+    <div class="video-container">
+        <video controls autoplay muted>
+            <source src="C:\Users\user\Downloads\golf video.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div class="gallery">
+        <a href="mariam_page.html"><img src="C:\Users\user\Downloads\صورة جولف.jpg" alt=></a>
+        <a href="mariam_page.html"><img src="C:\Users\user\Downloads\صورة جولف 3.jpg" alt="صورة جولف 2"></a>
+        <a href="mariam_page.html"><img src="C:\Users\user\Downloads\صورة جولف 2.jpg"  alt="صورة جولف 3"></a>
+    </div>
+
+    <div class="info-container">
+        <div class="info-box" onclick="location.href='contact.html'">
+            <h3>اتصل بنا</h3>
+            <p>في منتجع الجولف، نحن هنا لخدمتك والإجابة على جميع استفساراتك! سواء كنت ترغب في حجز إقامة، الاستفسار عن المرافق، أو تحتاج إلى أي مساعدة، لا تتردد في التواصل معنا.</p>
+        </div>
+        <div class="info-box" onclick="location.href='booking.html'">
+            <h3>الحجوزات</h3>
+            <p>يوفر منتجع الجولف تجربة حجز مرنة وسهلة لضمان راحة الزوار والاستمتاع بخدماته المتكاملة. سواء كنت تبحث عن إقامة فاخرة، حجز جولة جولف، أو الاستفادة من المرافق المختلفة، نقدم لك خيارات متنوعة تناسب احتياجاتك.</p>
+        </div>
+        <div class="info-box" onclick="location.href='file:'///C:/Users/user/Desktop/html/page%201.html'">
+            <h3>المرافق</h3>
+            <p>يقدم منتجع الجولف مجموعة متنوعة من المرافق التي تضمن تجربة فريدة للزوار والمقيمين، حيث تجمع بين الرفاهية، الراحة، والأنشطة الرياضية.</p>
+        </div>
+        <div class="info-box" onclick="location.href='five_rounds.html'">
+            <h3>خمس جولات</h3>
+            <p>استمتع بتجربة لا تُنسى مع باقة "خمس جولات" التي تشمل إقامة كاملة لمدة خمس ليالي في جناح فاخر، بالإضافة إلى خمس جولات - 18 حفرة. كما تشمل الباقة جولة واحدة مضمونة في ملعب "سي فيو" الشهير، بالإضافة إلى جلسة تدريب رقمية مجانية.</p>
+        </div>
+        <div class="info-box" onclick="location.href='triple_round.html'">
+            <h3>الجولة الثلاثية</h3>
+            <p>استمتع مع باقة "الجولة الثلاثية" التي تشمل إقامة لمدة ليلتين في غرفة مزدوجة مع وجبة إفطار، بالإضافة إلى ثلاث جولات - 18 حفرة. تشمل الباقة خوض جولة واحدة في ملعب "سي فيو" الشهير، تأجير مجاني للعربات، وخصم 20% لمتجر المحترفين.</p>
+        </div>
+        <div class="info-box" onclick="location.href='relaxation.html'">
+            <h3>استراحة استجمام</h3>
+            <p>استمتع بإقامة ليلية واحدة مع وجبة إفطار كاملة وتناول العشاء في أي من مطاعم المنتجع، مع الوصول إلى الملاعب. تشمل الباقة تأجير نادي مجاني لإكمال تجربتك.</p>
+        </div>
+    </div>
+    <section>
+        <h3>المرافق</h3>
+        <p>يقدم منتجع الجولف مجموعة متنوعة من المرافق التي تضمن تجربة فريدة للزوار والمقيمين، حيث تجمع بين الرفاهية، الراحة، والأنشطة الرياضية
+            
+    </section>
+    
+</body>
+</html>

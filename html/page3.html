@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - منتجع الجولف</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .form-section, .contact-info {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 16px;
+            margin: 10px 0;
+            display: block;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .contact-info h3 {
+            margin-bottom: 15px;
+        }
+        .contact-info p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>اتصل بنا</h1>
+    
+    <div class="section">
+        <!-- قسم نموذج الاتصال -->
+        <div class="form-section">
+            <h2>نموذج الاتصال</h2>
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+        </div>
+
+        <div class="contact-info">
+            <h2>معلومات الاتصال</h2>
+            <h3>العنوان:</h3>
+            <p>منتجع الجولف، </p>
+
+            <h3>الهاتف:</h3>
+            <p>+966 123 456 789</p>
+
+            <h3>البريد الإلكتروني:</h3>
+            <p>info@golfresort.com</p>
+
+            <h3>ساعات العمل:</h3>
+            <p>من الأحد إلى الخميس: 9 صباحاً - 6 مساءً</p>
+            <p>السبت: 10 صباحاً - 4 مساءً</p>
+        </div>
+    </div>
+
+    <div class="map">
+        <p>يمكنك إضافة خريطة تفاعلية هنا باستخدام Google Maps أو أي خدمة أخرى لعرض موقع المنتجع.</p>
+    </div>
+</div>
+
+</body>
+</html>
